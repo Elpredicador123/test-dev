@@ -8,7 +8,14 @@ import ShopContextProvider from './context/ShopContext.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <ShopContextProvider>
-    <MouseFollower/>
+      <MouseFollower
+        imageSrc='./assets/logo2.png'
+        width={30}
+        height={30}
+        zIndex={9999}
+        backgroundColor='transparent'
+        followSpeed={0.1}
+      />
     <App />
     </ShopContextProvider>
   </StrictMode>,
