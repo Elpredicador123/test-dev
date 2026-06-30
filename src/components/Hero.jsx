@@ -128,7 +128,7 @@ const Hero = () => {
                   scale: 6,
                   backgroundElement: (
                     <div>
-                      <img src={activeData.image}/>
+                      <img src="../assets/logo2.png"/>
                     </div>
                   )
                 }}
