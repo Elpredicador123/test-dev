@@ -90,12 +90,17 @@ const Hero = () => {
               <AnimatePresence mode='wait'>
                 <UpdateFollower
                 mouseOptions={{
-                  backgroundColor:'white',
+                  backgroundColor:'transparent',
                   zIndex:9999,
                   followSpeed:0.5,
                   rotate: -720,
                   mixBlendMode: 'difference',
-                  scale: 10,
+                    scale: 10,
+                  backgroundElement: (
+                                                <div>
+                                                  <img src={Logo} />
+                                                </div>
+                                              )
                 }}
                 >
                 <motion.h1
@@ -129,7 +134,7 @@ const Hero = () => {
                   scale: 6,
                   backgroundElement: (
                     <div>
-                      <img src={'../assets/logo2.png'} />
+                      <img src={Logo} />
                     </div>
                   )
                 }}
@@ -165,12 +170,18 @@ const Hero = () => {
                     return (
                       <UpdateFollower key={index}
                       mouseOptions={{
-                        backgroundColor: data.bgColor,
+                        backgroundColor: 'transparent',
                         zIndex: 9999,
                         followSpeed: 0.5,
                         scale: 5,
                         text: "View Details",
-                        textFontSize:'3px'
+                        textFontSize: '3px',
+                        backgroundElement: (
+                                                      <div>
+                                                        <img src={Logo} />
+                                                      </div>
+                                                    )
+                        
                       }}
                       >
                       <div key={data.id}

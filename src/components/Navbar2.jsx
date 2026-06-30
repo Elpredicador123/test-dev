@@ -33,7 +33,12 @@ const Navbar2 = () => {
                     zIndex: 9999,
                     followSpeed: 1.5,
                     scale: 5,
-                    mixBlendMode: "difference"
+                    mixBlendMode: "difference",
+backgroundElement: (
+                              <div>
+                                <img src={Logo} />
+                              </div>
+                            )
                   }}
                 >
                   <Link to={item.link} className='inline-block text-base font-semibold py-2 px-3 uppercase'>
@@ -44,11 +49,16 @@ const Navbar2 = () => {
             ))}
             <UpdateFollower
               mouseOptions={{
-                backgroundColor: "white",
+                backgroundColor: "transparent",
                 zIndex: 9999,
                 followSpeed: 1.5,
                 scale: 5,
-                mixBlendMode: "difference"
+                mixBlendMode: "difference",
+                backgroundElement: (
+                                              <div>
+                                                <img src={Logo} />
+                                              </div>
+                                            )
               }}
             >
               <Link to='/cart'> <div className='relative'>
@@ -58,11 +68,16 @@ const Navbar2 = () => {
             </UpdateFollower>
             <UpdateFollower
               mouseOptions={{
-                backgroundColor: "white",
+                backgroundColor: "transparent",
                 zIndex: 9999,
                 followSpeed: 1.5,
                 scale: 5,
-                mixBlendMode: "difference"
+                mixBlendMode: "difference",
+                backgroundElement: (
+                                              <div>
+                                                <img src={Logo} />
+                                              </div>
+                                            )
               }}
             >
               <button className='text-xl ps-8'>

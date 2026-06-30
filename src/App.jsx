@@ -11,6 +11,8 @@ import ProductList from './components/ProductList'
 import Navbar2 from './components/Navbar2'
 import SingleProduct from './components/SingleProduct'
 
+import Logo from '../assets/logo2.png'
+
 const router = createBrowserRouter([
   {
     path:'/',
@@ -56,9 +58,14 @@ const App = () => {
       <div className='relative z-10'>
         <UpdateFollower
         mouseOptions={{
-          backgroundColor: "white",
+          backgroundColor: "transparent",
           zIndex: 10,
-          followSpeed: 1.5,
+            followSpeed: 1.5,
+          backgroundElement: (
+                              <div>
+                                <img src={Logo} />
+                              </div>
+                            )
         }}
         >
        <RouterProvider router={router}/>
