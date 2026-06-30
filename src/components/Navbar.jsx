@@ -55,11 +55,11 @@ const Navbar = () => {
               <li key={index}>
                 <UpdateFollower
                 mouseOptions={{
-                  backgroundColor: "transparent",
-                  zIndex: 9999,
-                  followSpeed: 1.5,
-                  scale:5,
-                    mixBlendMode: "difference",
+                  backgroundColor:'transparent',
+                  zIndex:9999,
+                  followSpeed: 0.5,
+                  rotate: -720,
+                  scale: 6,
                   backgroundElement: (
                                                 <div>
                                                   <img src={Logo} />
@@ -75,11 +75,11 @@ const Navbar = () => {
             ))}
             <UpdateFollower 
              mouseOptions={{
-              backgroundColor: "transparent",
-              zIndex: 9999,
-              followSpeed: 1.5,
-              scale:5,
-                mixBlendMode: "difference",
+              backgroundColor:'transparent',
+                  zIndex:9999,
+                  followSpeed: 0.5,
+                  rotate: -720,
+                  scale: 6,
               backgroundElement: (
                                             <div>
                                               <img src={Logo} />
