@@ -122,7 +122,7 @@ const Hero = () => {
               <AnimatePresence mode='wait'>
               <UpdateFollower
                 mouseOptions={{
-                  backgroundColor:activeData.bgColor,
+                  backgroundColor:transparent,
                   zIndex:9999,
                   followSpeed: 0.5,
                   rotate: -720,
