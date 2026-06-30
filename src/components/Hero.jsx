@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Logo from '../assets/logo2.png'
 import Navbar from './Navbar'
 import Shoe1 from '../assets/Shoes1.png'
 import Shoe2 from '../assets/Shoes2.png'
@@ -128,7 +129,7 @@ const Hero = () => {
                   scale: 6,
                   backgroundElement: (
                     <div>
-                      <img src="../assets/logo2.png"/>
+                      <img src={Logo} />
                     </div>
                   )
                 }}
