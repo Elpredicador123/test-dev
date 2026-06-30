@@ -11,7 +11,7 @@ import ProductList from './components/ProductList'
 import Navbar2 from './components/Navbar2'
 import SingleProduct from './components/SingleProduct'
 
-import Logo from '../assets/logo2.png'
+import Logo from './assets/logo2.png'
 
 const router = createBrowserRouter([
   {
