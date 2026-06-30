@@ -37,11 +37,21 @@ const Item = ({ product }) => {
       </div>
 
       {hovered && (
-        <div className='fixed inset-0 z-50 flex items-center justify-center bg-black/60 pointer-events-none'>
+        <div className={`
+          fixed inset-0 z-50 flex items-center justify-center
+          bg-black/60
+          transition-all duration-700 ease-in-out
+          ${hovered ? 'opacity-100' : 'opacity-0'}
+          pointer-events-none
+        `}>
           <img
             src={product?.image}
             alt={product?.name}
-            className='max-w-[70vw] max-h-[70vh] object-contain'
+            className={`
+              max-w-[70vw] max-h-[70vh] object-contain
+              transition-all duration-700 ease-in-out
+              ${hovered ? 'scale-100' : 'scale-75'}
+            `}
           />
         </div>
       )}
